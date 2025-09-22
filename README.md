@@ -1,2 +1,5 @@
 # Sign-n-Screen
-A simple and modern sign-in form example. Built with HTML and CSS, it provides a responsive and user-friendly interface.
+✨ A simple and modern Sign-In form
+🖥️ Built with HTML & CSS
+📱 Fully responsive and user-friendly design
+🔑 Clean & minimal interface for better usability
