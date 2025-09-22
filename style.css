@@ -1,69 +1,104 @@
+/* Genel Ayarlar */
 * {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings: "wdth" 100;
-  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.input-field {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 12px;
-  width: 380px;
-  padding: 14px;
-  font-size: 18px;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-}
-
-.input-field:focus {
-  border-color: #ffffffe2;
-  outline: none;
-  box-shadow: 0 0 5px #ffffff;
-}
-
-.input-field:focus::placeholder {
-  color: #888;
-}
-
+/* Body ve sayfa ortalama */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 0;
-  background-color: #a0aeb5;
-
+  background-color: #dceeff;
 }
 
-
+/* Giriş ekranı */
 .sign-screen {
-  width: 400px;
-  padding: 80px;
+  width: 90%;
+  max-width: 450px; /* inputlara uyumlu */
+  padding: 60px;
   background-color: #008efb; 
   border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
   text-align: center;
   color: white;
+  transition: transform 0.3s ease;
 }
 
-.sign-screen h2 {
-  margin-bottom: 25px;
+.sign-screen:hover {
+  transform: translateY(-5px);
 }
 
+/* Başlık */
+.sign {
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+
+/* Input alanları */
+.input-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus {
+  border-color: #0062ff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 98, 255, 0.5);
+}
+
+.input-field::placeholder {
+  color: #888;
+}
+
+/* Buton */
 button {
-
-  padding: 18px;
+  width: 200px;
+  height: 80px;
+  padding: 0 24px;
   font-size: 20px;
+  color: #ffffff;
+  background-color: #0062ff;
   border: none;
-  border-radius: 10px;
-  background-color: #0062ff; 
-  color: white;
+  border-radius: 16px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  margin-top: 16px;
 }
 
 button:hover {
-  background-color: #115fcd;  
+  background-color: #0d5fd1;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+@media (max-width: 500px) {
+  .sign-screen {
+    padding: 40px 20px;
+  }
+  .sign {
+    font-size: 28px;
+  }
+  .input-field {
+    font-size: 16px;
+    padding: 12px;
+  }
+  button {
+    width: 160px;
+    height: 60px;
+    font-size: 18px;
+  }
 }
