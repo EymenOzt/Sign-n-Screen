@@ -1,4 +1,4 @@
-/* Genel Ayarlar */
+
 * {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -9,7 +9,6 @@
   padding: 0;
 }
 
-/* Body ve sayfa ortalama */
 body {
   display: flex;
   justify-content: center;
@@ -17,11 +16,9 @@ body {
   height: 100vh;
   background-color: #dceeff;
 }
-
-/* Giriş ekranı */
 .sign-screen {
   width: 90%;
-  max-width: 450px; /* inputlara uyumlu */
+  max-width: 450px; 
   padding: 60px;
   background-color: #008efb; 
   border-radius: 15px;
@@ -30,18 +27,13 @@ body {
   color: white;
   transition: transform 0.3s ease;
 }
-
 .sign-screen:hover {
   transform: translateY(-5px);
 }
-
-/* Başlık */
 .sign {
   font-size: 35px;
   margin-bottom: 40px;
 }
-
-/* Input alanları */
 .input-field {
   display: flex;
   flex-direction: column;
@@ -63,8 +55,6 @@ body {
 .input-field::placeholder {
   color: #888;
 }
-
-/* Buton */
 button {
   width: 200px;
   height: 80px;
@@ -78,13 +68,10 @@ button {
   transition: all 0.3s ease;
   margin-top: 16px;
 }
-
 button:hover {
   background-color: #0d5fd1;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
-
-
 @media (max-width: 500px) {
   .sign-screen {
     padding: 40px 20px;
