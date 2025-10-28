@@ -16,7 +16,7 @@ body {
   height: 100vh;
   background-color: #dceeff;
 }
-.sign-screen {
+.Box {
   width: 90%;
   max-width: 450px; 
   padding: 60px;
@@ -27,9 +27,7 @@ body {
   color: white;
   transition: transform 0.3s ease;
 }
-.sign-screen:hover {
-  transform: translateY(-5px);
-}
+
 .sign {
   font-size: 35px;
   margin-bottom: 40px;
@@ -88,4 +86,13 @@ button:hover {
     height: 60px;
     font-size: 18px;
   }
+}
+
+.Box:hover {
+  transform: translateY(-5px); 
+}
+
+.sign-up{
+  font-size: 35px;
+  margin-bottom: 40px;
 }
